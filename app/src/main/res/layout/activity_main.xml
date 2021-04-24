@@ -31,7 +31,9 @@
         android:id="@+id/Nav_View"
         app:menu="@menu/drawer_menu"
         app:headerLayout="@layout/drawer_header"
-        android:layout_gravity="start"/>
+        android:layout_gravity="start"
+        android:fitsSystemWindows="true"/>
+    // um sonho, entender o android:fitsSystemWindows
     //o layout_gravity joga o menu para a esquerda = start e direita = end
     //ja adiciona o menu dentro da navigation viewer
 
