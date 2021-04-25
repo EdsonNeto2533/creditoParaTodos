@@ -13,7 +13,7 @@ class mainFragment: Fragment() {
 
     //dando override no oncreate para dizer qual layout de fragmento abrir
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
-        var view: View = inflater.inflate(R.layout.segundofragment,container,false)
+        var view: View = inflater.inflate(R.layout.mainfragment,container,false)
         return view
     }
 

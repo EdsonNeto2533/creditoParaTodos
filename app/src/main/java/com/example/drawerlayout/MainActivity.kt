@@ -70,7 +70,7 @@ class MainActivity : AppCompatActivity(),NavigationView.OnNavigationItemSelected
 
     //evento de click
     override fun onNavigationItemSelected(item: MenuItem): Boolean {
-        TODO("Not yet implemented")
+
         if (item.itemId == R.id.homeBTN){
             val tx = supportFragmentManager.beginTransaction()
             //replace pq ja adicionamos antes
@@ -83,6 +83,7 @@ class MainActivity : AppCompatActivity(),NavigationView.OnNavigationItemSelected
             tx.replace(R.id.container_fragment, SegundoFragment())
             tx.commit()
         }
+        return true
     }
 
 
