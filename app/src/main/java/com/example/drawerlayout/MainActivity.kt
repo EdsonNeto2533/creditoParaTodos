@@ -3,10 +3,14 @@ package com.example.drawerlayout
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.Gravity
 import android.view.MenuItem
+import android.view.View
+import android.widget.Button
 import android.widget.Toolbar
 import androidx.appcompat.app.ActionBarDrawerToggle
 import androidx.appcompat.widget.ToolbarWidgetWrapper
+import androidx.core.view.GravityCompat
 import androidx.drawerlayout.widget.DrawerLayout
 import androidx.fragment.app.FragmentManager
 import androidx.fragment.app.FragmentTransaction
@@ -19,6 +23,7 @@ class MainActivity : AppCompatActivity(),NavigationView.OnNavigationItemSelected
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+
 
 
         //puxa la na main activity
@@ -53,7 +58,7 @@ class MainActivity : AppCompatActivity(),NavigationView.OnNavigationItemSelected
         //fragManager = supportFragmentManager
         //fragTrans = fragManager.beginTransaction()
 
-        //magica
+        //fragmento default da main page
         val tx = supportFragmentManager.beginTransaction()
         tx.add(R.id.container_fragment, mainFragment())
         tx.commit()
@@ -70,6 +75,9 @@ class MainActivity : AppCompatActivity(),NavigationView.OnNavigationItemSelected
 
     //evento de click
     override fun onNavigationItemSelected(item: MenuItem): Boolean {
+        // joga a navbar para esquerda qnd o item for selecionado
+        val drawer: DrawerLayout = findViewById(R.id.drawer_layout)
+        drawer.closeDrawer(GravityCompat.START)
 
         if (item.itemId == R.id.homeBTN){
             val tx = supportFragmentManager.beginTransaction()
@@ -85,6 +93,7 @@ class MainActivity : AppCompatActivity(),NavigationView.OnNavigationItemSelected
         }
         return true
     }
+
 
 
 }

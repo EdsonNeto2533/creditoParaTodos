@@ -11,4 +11,5 @@ class SegundoFragment: Fragment() {
         var view: View = inflater.inflate(R.layout.segundofragment,container,false)
         return view
     }
+
 }
