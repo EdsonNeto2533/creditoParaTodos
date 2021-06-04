@@ -10,7 +10,7 @@
             <item
                 android:id="@+id/tela2BTN"
                 android:icon="@drawable/ic_baseline_insert_emoticon_24"
-                android:title="SegundaTela" />
+                android:title="Pessoa Fisíca" />
         </menu>
     </item>
     <item android:title="Categoria2">
