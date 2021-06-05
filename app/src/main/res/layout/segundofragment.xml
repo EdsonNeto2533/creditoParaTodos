@@ -10,7 +10,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content">
 
-        <LinearLayout
+        <RelativeLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="vertical">
@@ -28,10 +28,38 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_margin="20dp"
-                android:background="@drawable/arredonda_btn" />
+                android:layout_below="@id/imgtopo"
+                android:id="@+id/btn5500"
+                android:textColor="@color/black"
+                android:background="@drawable/arredonda_btn"
+                android:text="@string/emprestimo1"
+                app:backgroundTint="@color/amarelo"
+                />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="20dp"
+                android:id="@+id/btn2"
+                android:layout_below="@id/btn5500"
+                app:backgroundTint="@color/amarelo"
+                android:textColor="@color/black"
+                android:background="@drawable/arredonda_btn"
+                android:text="@string/emprestimo1"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="20dp"
+                android:layout_below="@id/btn2"
+                android:textColor="@color/black"
+                app:backgroundTint="@color/amarelo"
+                android:background="@drawable/arredonda_btn"
+                android:text="@string/emprestimo1"/>
 
 
-        </LinearLayout>
+
+        </RelativeLayout>
 
 
     </ScrollView>
