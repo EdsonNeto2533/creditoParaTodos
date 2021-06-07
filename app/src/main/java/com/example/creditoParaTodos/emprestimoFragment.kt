@@ -12,15 +12,12 @@ class emprestimoFragment: Fragment() {
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
         var view: View = inflater.inflate(R.layout.emprestimo_frag_layout,container,false)
 
+
         val check: CheckBox = view.findViewById(R.id.checkemp)
 
-        check.setOnCheckedChangeListener{ _, isChecked ->
-            if (checkemp.isChecked ){
-                btnContratar.isEnabled = true
-            }
-
+        check.setOnClickListener {
+            habilitabtn()
         }
-
 
 
         return view
@@ -28,4 +25,9 @@ class emprestimoFragment: Fragment() {
 
     }
 
+    fun habilitabtn() {
+        if (checkemp.isChecked) {
+            btnContratar.isEnabled = true
+        }
+    }
 }
