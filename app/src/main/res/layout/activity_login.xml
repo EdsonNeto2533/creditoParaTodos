@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_margin="10dp"
+    >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Bem vindo"
+        android:id="@+id/TVtopo"
+        android:textSize="40sp"
+        android:layout_marginTop="80dp"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Realize seu login"
+        android:id="@+id/TVLogin"
+        android:layout_below="@+id/TVtopo"
+        android:layout_marginTop="60dp"
+
+        android:textSize="20sp"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:id="@+id/ETemail"
+        android:layout_below="@+id/TVLogin"
+        android:hint="Email"
+        android:inputType="text"
+        android:backgroundTint="@color/black"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:id="@+id/ETsenha"
+        android:layout_below="@+id/ETemail"
+        android:hint="Senha"
+        android:inputType="textPassword"
+        android:backgroundTint="@color/black"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/ETsenha">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginTop="10dp"
+            android:id="@+id/BTNlogin"
+            android:text="Login"
+            />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Cadastre-se"
+            android:id="@+id/BTNcadastrar"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            />
+
+    </LinearLayout>
+
+
+
+
+
+
+</RelativeLayout>
