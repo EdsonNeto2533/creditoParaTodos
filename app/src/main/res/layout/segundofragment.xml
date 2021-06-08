@@ -45,17 +45,18 @@
                 app:backgroundTint="@color/amarelo"
                 android:textColor="@color/black"
                 android:background="@drawable/arredonda_btn"
-                android:text="@string/emprestimo1"/>
+                android:text="@string/emprestimo2"/>
 
             <Button
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_margin="20dp"
                 android:layout_below="@id/btn2"
+                android:id="@+id/btn3"
                 android:textColor="@color/black"
                 app:backgroundTint="@color/amarelo"
                 android:background="@drawable/arredonda_btn"
-                android:text="@string/emprestimo1"/>
+                android:text="@string/emprestimo3"/>
 
 
 

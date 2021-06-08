@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="50dp">
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_margin="10dp">
+
+
+            <TextView
+                android:layout_marginTop="30dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Informações do emprestimo"
+                android:layout_gravity="center"
+                android:textStyle="bold"
+                android:textSize="30sp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:gravity="center"
+                android:text="@string/principal"/>
+
+            <TextView
+                android:layout_marginTop="30dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Formulário de Adesão"
+
+                android:layout_gravity="center"
+                android:textStyle="bold"
+                android:textSize="30sp"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:inputType="text"
+                android:backgroundTint="@color/black"
+                android:hint="Nome"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:inputType="text"
+                android:backgroundTint="@color/black"
+                android:hint="Telefone"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:inputType="text"
+                android:backgroundTint="@color/black"
+                android:hint="Email"/>
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_gravity="center"
+                android:id="@+id/checkemp"
+                android:layout_marginTop="20dp"
+                android:layout_height="wrap_content"
+                android:text="Declaro estar ciente de tudo"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/btnContratar"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:enabled="false"
+                android:background="@drawable/arredonda_btn"
+                android:text="Contratar"
+                android:textColor="@color/black"
+                app:backgroundTint="@color/amarelo" />
+
+
+
+
+
+        </LinearLayout>
+
+
+
+    </ScrollView>
+
+
+</LinearLayout>
