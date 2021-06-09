@@ -22,8 +22,8 @@ class login : AppCompatActivity() {
 
 
     fun realizarLogin(){
-        val email = ETemail.toString()
-        val senha = ETsenha.toString()
+        val email = ETemail.text.toString()
+        val senha = ETsenha.text.toString()
         val aux: pessoaBusiness = pessoaBusiness()
         val aux2 = aux.getlista()
 
@@ -37,10 +37,10 @@ class login : AppCompatActivity() {
                     val inti = Intent(this, MainActivity::class.java)
                     startActivity(inti)
                     break
-                } else {
-                    Toast.makeText(this,"Usuario não encontrado", Toast.LENGTH_SHORT).show()
                 }
             }
+
+            Toast.makeText(this,"Usuario não encontrado", Toast.LENGTH_SHORT).show()
         }
 
 
