@@ -26,4 +26,8 @@ class pessoaBusiness {
         pessoaRepository.salvarPessoa(pessoa)
     }
 
+    fun getlista(): List<PessoaEntity> {
+        return pessoaRepository.getListPessoas()
+    }
+
 }
