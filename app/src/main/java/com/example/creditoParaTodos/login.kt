@@ -16,7 +16,8 @@ class login : AppCompatActivity() {
             realizarLogin()
         }
         BTNcadastrar.setOnClickListener{
-            Toast.makeText(this,"Preencha todos os campos", Toast.LENGTH_SHORT).show()
+            val inti = Intent(this, cadastro::class.java)
+            startActivity(inti)
         }
     }
 

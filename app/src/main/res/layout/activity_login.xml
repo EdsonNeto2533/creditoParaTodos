@@ -63,6 +63,8 @@
             android:layout_weight="1"
             android:layout_marginTop="10dp"
             android:id="@+id/BTNlogin"
+            android:textColor="@color/black"
+            android:backgroundTint="@color/amarelo"
             android:text="Login"
             />
 
@@ -71,6 +73,8 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:text="Cadastre-se"
+            android:backgroundTint="@color/amarelo"
+            android:textColor="@color/black"
             android:id="@+id/BTNcadastrar"
             android:layout_marginLeft="10dp"
             android:layout_marginTop="10dp"
