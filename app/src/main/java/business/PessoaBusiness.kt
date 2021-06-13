@@ -1,17 +1,19 @@
 package business
 
 import entity.PessoaEntity
-import repository.pessoaRepository
+import repository.PessoaRepository
 
-class pessoaBusiness {
+class PessoaBusiness {
 
     fun salvar(nome: String, telefone: Int,  email: String,  senha: String){
         val pessoa = PessoaEntity (nome, telefone, email, senha)
-        pessoaRepository.salvarPessoa(pessoa)
+        PessoaRepository.salvarPessoa(pessoa)
     }
 
     fun getlista(): List<PessoaEntity> {
-        return pessoaRepository.getListPessoas()
+        return PessoaRepository.getListPessoas()
     }
+
+
 
 }

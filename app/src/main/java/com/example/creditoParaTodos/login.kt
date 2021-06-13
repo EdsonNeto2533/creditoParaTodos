@@ -4,7 +4,7 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Toast
-import business.pessoaBusiness
+import business.PessoaBusiness
 import kotlinx.android.synthetic.main.activity_login.*
 
 class login : AppCompatActivity() {
@@ -22,10 +22,12 @@ class login : AppCompatActivity() {
     }
 
 
+
+
     fun realizarLogin(){
         val email = ETemail.text.toString()
         val senha = ETsenha.text.toString()
-        val aux: pessoaBusiness = pessoaBusiness()
+        val aux: PessoaBusiness = PessoaBusiness()
         val aux2 = aux.getlista()
 
         //valida campos preenchidos
@@ -35,13 +37,16 @@ class login : AppCompatActivity() {
             //percorre a lista de pessoas em busca do usuario informado e se encontrado realiza o login
             for (i in aux2.withIndex()){
                 if(i.value.email == email && i.value.senha == senha ){
-                    val inti = Intent(this, principal::class.java)
+                    Toast.makeText(this,"Seja bem vindo ${i.value.nome}", Toast.LENGTH_SHORT).show()
+                    val inti = Intent(this, Principal::class.java)
                     startActivity(inti)
-                    break
+                } else{
+                    Toast.makeText(this,"Usuario não encontrado", Toast.LENGTH_SHORT).show()
                 }
+
             }
 
-            Toast.makeText(this,"Usuario não encontrado", Toast.LENGTH_SHORT).show()
+
         }
 
 

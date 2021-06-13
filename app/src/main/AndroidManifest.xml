@@ -10,7 +10,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.DrawerLayout">
         <activity android:name=".cadastro" />
-        <activity android:name=".principal" />
+        <activity android:name=".Principal" />
         <activity
             android:name=".login"
             android:theme="@style/Theme.DrawerLayout.noActionBar">

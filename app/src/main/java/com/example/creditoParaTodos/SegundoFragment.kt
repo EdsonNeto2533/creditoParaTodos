@@ -6,7 +6,6 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
 import androidx.fragment.app.Fragment
-import kotlinx.android.synthetic.main.segundofragment.*
 
 class SegundoFragment : Fragment() {
     override fun onCreateView(
@@ -40,7 +39,7 @@ class SegundoFragment : Fragment() {
     private fun call_emprestimo() {
         val tx = fragmentManager?.beginTransaction()
         if (tx != null) {
-            tx.replace(R.id.container_fragment, emprestimoFragment())
+            tx.replace(R.id.container_fragment, EmprestimoFragment())
         }
         if (tx != null) {
             tx.commit()
@@ -52,7 +51,7 @@ class SegundoFragment : Fragment() {
     private fun call_emprestimo2(){
         val tx = fragmentManager?.beginTransaction()
         if (tx != null) {
-            tx.replace(R.id.container_fragment, emprestimoFragment2())
+            tx.replace(R.id.container_fragment, EmprestimoFragment2())
         }
         if (tx != null) {
             tx.commit()
@@ -63,7 +62,7 @@ class SegundoFragment : Fragment() {
     private fun call_emprestimo3(){
         val tx = fragmentManager?.beginTransaction()
         if (tx != null) {
-            tx.replace(R.id.container_fragment, emprestimoFragment3())
+            tx.replace(R.id.container_fragment, EmprestimoFragment3())
         }
         if (tx != null) {
             tx.commit()

@@ -9,7 +9,7 @@ import androidx.drawerlayout.widget.DrawerLayout
 import com.google.android.material.navigation.NavigationView
 
 
-class principal : AppCompatActivity(),NavigationView.OnNavigationItemSelectedListener {
+class Principal : AppCompatActivity(),NavigationView.OnNavigationItemSelectedListener {
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -38,7 +38,7 @@ class principal : AppCompatActivity(),NavigationView.OnNavigationItemSelectedLis
 
         //fragmento default da mainActivity
         val tx = supportFragmentManager.beginTransaction()
-        tx.add(R.id.container_fragment, mainFragment())
+        tx.add(R.id.container_fragment, MainFragment())
         tx.commit()
 
 
@@ -54,7 +54,7 @@ class principal : AppCompatActivity(),NavigationView.OnNavigationItemSelectedLis
 
         if (item.itemId == R.id.homeBTN){
             val tx = supportFragmentManager.beginTransaction()
-            tx.replace(R.id.container_fragment, mainFragment())
+            tx.replace(R.id.container_fragment, MainFragment())
             tx.commit()
         }
 

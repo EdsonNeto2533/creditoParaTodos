@@ -8,7 +8,7 @@ import android.widget.Button
 import androidx.fragment.app.Fragment
 
 //fragmento é uma parte de um layout q eu posso carregar dentro de uma activity
-class mainFragment : Fragment() {
+class MainFragment : Fragment() {
 
 
 

@@ -8,9 +8,9 @@ import android.widget.CheckBox
 import androidx.fragment.app.Fragment
 import kotlinx.android.synthetic.main.emprestimo_frag_layout.*
 
-class emprestimoFragment3: Fragment() {
+class EmprestimoFragment2: Fragment() {
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
-        var view: View = inflater.inflate(R.layout.emprestimo_frag_layout3,container,false)
+        var view: View = inflater.inflate(R.layout.emprestimo_frag_layout2,container,false)
 
 
         val check: CheckBox = view.findViewById(R.id.checkemp)
