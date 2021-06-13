@@ -5,7 +5,7 @@ import repository.PessoaRepository
 
 class PessoaBusiness {
 
-    fun salvar(nome: String, telefone: Int,  email: String,  senha: String){
+    fun salvar(nome: String, telefone: String,  email: String,  senha: String){
         val pessoa = PessoaEntity (nome, telefone, email, senha)
         PessoaRepository.salvarPessoa(pessoa)
     }

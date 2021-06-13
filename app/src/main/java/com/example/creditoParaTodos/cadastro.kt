@@ -22,12 +22,12 @@ class cadastro : AppCompatActivity() {
 
     fun realizarCadastro(){
         val nome = ETnome.text.toString()
-        val telefone = ETtelefone.text.toString().toInt()
+        val telefone = ETtelefone.text.toString()
         val email = ETemail.text.toString()
         val senha = ETsenha.text.toString()
 
         //realiza conferencia do preenchimento dos campos, se tudo ok realiza o cadastro
-        if (nome.equals("") || telefone <= 0 || email.equals("") || senha.equals("")){
+        if (nome.equals("") || telefone.equals("") || email.equals("") || senha.equals("")){
             Toast.makeText(this,"Preencha todos os campos", Toast.LENGTH_SHORT).show()
         } else {
             val aux: PessoaBusiness = PessoaBusiness()
