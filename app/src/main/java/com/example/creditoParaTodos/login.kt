@@ -35,7 +35,7 @@ class login : AppCompatActivity() {
             //percorre a lista de pessoas em busca do usuario informado e se encontrado realiza o login
             for (i in aux2.withIndex()){
                 if(i.value.email == email && i.value.senha == senha ){
-                    val inti = Intent(this, MainActivity::class.java)
+                    val inti = Intent(this, principal::class.java)
                     startActivity(inti)
                     break
                 }

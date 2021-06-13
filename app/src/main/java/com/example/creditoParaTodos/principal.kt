@@ -9,7 +9,7 @@ import androidx.drawerlayout.widget.DrawerLayout
 import com.google.android.material.navigation.NavigationView
 
 
-class MainActivity : AppCompatActivity(),NavigationView.OnNavigationItemSelectedListener {
+class principal : AppCompatActivity(),NavigationView.OnNavigationItemSelectedListener {
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
