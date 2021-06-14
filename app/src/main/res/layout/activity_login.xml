@@ -3,13 +3,22 @@
     xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:layout_margin="10dp"
+
     >
+
+
+    <ImageView
+        android:id="@+id/ivLogo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:src="@drawable/logo" />
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center"
+        android:layout_below="@+id/ivLogo"
         android:text="Bem vindo"
         android:id="@+id/TVtopo"
         android:textSize="40sp"
@@ -31,6 +40,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
+        android:layout_margin="10dp"
         android:id="@+id/ETemail"
         android:textColor="@color/black"
         android:layout_below="@+id/TVLogin"
@@ -44,6 +54,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
         android:id="@+id/ETsenha"
+        android:layout_margin="10dp"
         android:textColor="@color/black"
         android:layout_below="@+id/ETemail"
         android:hint="Senha"
@@ -63,6 +74,7 @@
             android:layout_weight="1"
             android:layout_marginTop="10dp"
             android:id="@+id/BTNlogin"
+            android:layout_margin="10dp"
             android:textColor="@color/black"
             android:backgroundTint="@color/amarelo"
             android:text="Login"
@@ -76,6 +88,7 @@
             android:backgroundTint="@color/amarelo"
             android:textColor="@color/black"
             android:id="@+id/BTNcadastrar"
+            android:layout_margin="10dp"
             android:layout_marginLeft="10dp"
             android:layout_marginTop="10dp"
             android:layout_marginRight="10dp"
