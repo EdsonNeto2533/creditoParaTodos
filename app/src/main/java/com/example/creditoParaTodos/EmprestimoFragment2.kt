@@ -4,6 +4,7 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Button
 import android.widget.CheckBox
 import androidx.fragment.app.Fragment
 import kotlinx.android.synthetic.main.emprestimo_frag_layout.*
@@ -14,15 +15,30 @@ class EmprestimoFragment2: Fragment() {
 
 
         val check: CheckBox = view.findViewById(R.id.checkemp)
+        val contratar: Button = view.findViewById(R.id.btnContratar)
 
+
+        contratar.setOnClickListener {
+            telafinal()
+        }
         check.setOnClickListener {
             habilitabtn()
         }
 
 
+
         return view
 
 
+    }
+    fun telafinal(){
+        val tx = fragmentManager?.beginTransaction()
+        if (tx != null) {
+            tx.replace(R.id.container_fragment, ConcluidoFragment())
+        }
+        if (tx != null) {
+            tx.commit()
+        }
     }
 
 
@@ -30,8 +46,10 @@ class EmprestimoFragment2: Fragment() {
     fun habilitabtn() {
         if (checkemp.isChecked) {
             btnContratar.isEnabled = true
+            btnContratar.isClickable = true
         } else {
             btnContratar.isEnabled = false
+            btnContratar.isClickable = false
         }
     }
 }

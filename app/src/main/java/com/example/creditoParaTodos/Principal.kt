@@ -41,8 +41,6 @@ class Principal : AppCompatActivity(),NavigationView.OnNavigationItemSelectedLis
         tx.add(R.id.container_fragment, MainFragment())
         tx.commit()
 
-
-
     }
 
 
@@ -60,7 +58,7 @@ class Principal : AppCompatActivity(),NavigationView.OnNavigationItemSelectedLis
 
         if (item.itemId == R.id.tela2BTN){
             val tx = supportFragmentManager.beginTransaction()
-            tx.replace(R.id.container_fragment, SegundoFragment())
+            tx.replace(R.id.container_fragment, PlanosFragment())
             tx.commit()
         }
         return true

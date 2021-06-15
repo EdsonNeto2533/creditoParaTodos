@@ -1,29 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
-    //cria como se fosse uma categoria com os itens dentro
+    //cria titulo para categoria
     <item android:title="Principal">
         <menu>
             <item
                 android:id="@+id/homeBTN"
                 android:icon="@drawable/ic_baseline_home_24"
-                android:title="Home" />
+                android:title="Principal" />
             <item
                 android:id="@+id/tela2BTN"
-                android:icon="@drawable/ic_baseline_insert_emoticon_24"
+                android:icon="@drawable/ic_banco"
                 android:title="Pessoa Fisíca" />
         </menu>
     </item>
-    <item android:title="Categoria2">
-        <menu>
-            <item
-                android:id="@+id/homeBTN2"
-                android:icon="@drawable/ic_baseline_home_24"
-                android:title="Home" />
-            <item
-                android:id="@+id/tela2BTN2"
-                android:icon="@drawable/ic_baseline_insert_emoticon_24"
-                android:title="SegundaTela" />
-        </menu>
-    </item>
+
 
 </menu>
