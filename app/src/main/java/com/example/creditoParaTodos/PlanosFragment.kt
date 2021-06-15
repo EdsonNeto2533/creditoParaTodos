@@ -13,7 +13,7 @@ class PlanosFragment : Fragment() {
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        var view: View = inflater.inflate(R.layout.segundofragment, container, false)
+        var view: View = inflater.inflate(R.layout.PlanosFragment, container, false)
 
         val btn: Button = view.findViewById(R.id.btn5500)
         val btn2: Button = view.findViewById(R.id.btn2)

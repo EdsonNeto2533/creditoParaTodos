@@ -8,8 +8,14 @@
     de juros do mercado!  Acesse o menu lateral e consulte nossas ofertas e escolha o plano que melhor se encaixa no seu orçamento</string>
     <string name="emprestimo1">emprestimo de 5500 reais com parcelas de 458,33 por 12 meses</string>
     <string name="emprestimo2">emprestimo de 5500 reais com parcelas de 229,16 por 24 meses</string>
-    <string name="emprestimo3">emprestimo de 5500 reais com parcelas de 114,58 por 12 meses</string>
+    <string name="emprestimo3">emprestimo de 5500 reais com parcelas de 114,58 por 48 meses</string>
     <string name="texto_padrao">Credito de R$ 5500 com a menor taxa de juros do mercado, a partir de 0% ao mês, e prazos variados para pagamento.</string>
     <string name="texto_padrao_two">Você pode refinanciar ate 50% do valor do credito e utilizar o dinheiro da forma que precisar!</string>
     <string name="texto_final">Agradecemos o seu interesse, um de nossos colaboradores vai entrar em contato via email informado para realizar a assinatura do contrato!</string>
+    <string name="revisao1">Informações do emprestimo</string>
+    <string name="revisao_informações1">valor contratado 5500 R$ com parcelas de 458,33 por 12 meses, vencimento das parcelas todo dia 10. Em caso de atraso será cobrado um valor de 2% em cima do valor da mensalidade por dia atrasado.</string>
+    <string name="revisao_informações2">valor contratado 5500 R$ com parcelas de 229,16 por 24 meses, vencimento das parcelas todo dia 10. Em caso de atraso será cobrado um valor de 2% em cima do valor da mensalidade por dia atrasado.</string>
+    <string name="revisao_informações3">valor contratado 5500 R$ com parcelas de 114,58 por 48 meses, vencimento das parcelas todo dia 10. Em caso de atraso será cobrado um valor de 2% em cima do valor da mensalidade por dia atrasado.</string>
+    <string name="cientetext">Declaro estar ciente de todas as informações</string>
+
 </resources>
