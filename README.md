@@ -11,7 +11,7 @@
 </h4>
 
 
-### Features
+### Funcionalidades
 
 - [x] Cadastro de usuário
 - [x] listagem de emprestimos
