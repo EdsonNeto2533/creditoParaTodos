@@ -20,7 +20,7 @@
 
 ### Pré-requisitos
 
-Antes de começar, você vai precisar ter instalado em sua máquina as seguintes ferramentas:
+você vai precisar ter instalado em seu PC as seguintes ferramentas:
 - Android Studio
 - Java JDK
 - AVD Configurado ou Smartphone Android
