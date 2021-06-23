@@ -3,6 +3,8 @@ package repository
 import entity.PessoaEntity
 
 class PessoaRepository {
+
+            //Lista de pessoas cadastradas
             companion object{
                 val listaPessoas = mutableListOf<PessoaEntity>()
 
